@@ -49,7 +49,7 @@ export const registerUser = async (req, res) => {
     await User.create({
       firstName: req.body.firstName,
       lastName: req.body.lastName,
-      username: req.body.username,
+      userName: req.body.userName,
       email: req.body.email,
       password: hashedPassword,
     });

@@ -6,7 +6,8 @@ import { UserList } from './components/UserList';
 function App() {
 
   return (
-    <div>
+    <div className='App'>
+      <h1 className='title'>My FullStack Project</h1>
      <Login />
      <Register />
      <UserList />

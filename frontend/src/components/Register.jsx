@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import '../App.css';
 
 export const Register = () => {
   const [firstName, setFirsName] = useState("");
@@ -33,7 +34,7 @@ export const Register = () => {
   return (
     <>
       <div className="registration">
-        <h1>If you didn't register before please do it now</h1>
+        <h2>If you didn't register before please do it now</h2>
         {errorMessage && <p>{errorMessage}</p>}
         <form onSubmit={handleRegister}>
           <div>
